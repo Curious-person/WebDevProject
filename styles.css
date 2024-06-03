@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: Helvetica;
+  
+}
+
+
+li, a, button {
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #135E3C;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  background-color: #FCE604;
+}
+
+.nav_links {
+  list-style: none;
+  background-color: #FCE604;
+  
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+  background-color: #FCE604;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  background-color: #FCE604;
+  
+  
+}
+
+.nav_links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: #AE1526;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #AE1526;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  
+
+}
+
+.cta {
+  background-color: #FCE604;
+  
+}
+
+button:hover {
+  background-color: #135E3C;
+}
+
+.topnav {
+ background-color: #FCE604;
+height: 120px;
+ width: auto;
+ padding: 50px;
+} 
+
+
+/* Cover photo and Heading text*/
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 50vh;
+  color: #135E3C;
+  flex-wrap: wrap;
+}
+
+#box1 h1 {
+  font-weight: bolder;
+}
+
+#box1 h2.lighter {
+  font-weight: 100;
+}
+
+.box {
+  font-size: 8em;
+  text-align: center;
+  border-radius: 15px;
+}
+
+#box1 {
+  text-align: left;
+  width: 500px;
+  height: auto;
+}
+
+
+#box1 h1 {
+  font-size: 50px;
+  
+}
+
+#box1 h2 {
+  font-size: 23px;
+
+}
+
+#box2 {
+  width: auto;
+}
+
+#headerphoto {
+  height: 400px;
+  background-color: #FCE604;
+}
+
+#order_button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #AE1526;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+}
+
+#order_button:hover {
+  background-color: white;
+  color: #AE1526;
+  border: solid #AE1526;
+}
+
+/*separator*/
+.separator {
+  width: 77%;
+  border-top-width: 3px;
+  border-radius: 50px;
+  border-top: 3px solid #D9D9D9;
+  margin: 40px auto;
+  
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  border: #AE1526 solid;
+  flex-wrap: wrap;
+}
+
+.navigation h1{
+  color: #A6A6A6;
+  font-size: 23px
+}
+
+.nav_food {
+  background-color: white;
+  color: #A6A6A6;
+  font-size: 23px;
+}
+
+.nav_food:hover {
+  background-color: white;
+  color: #AE1526;
+}
+
+
+
