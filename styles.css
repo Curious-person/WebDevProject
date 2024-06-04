@@ -211,7 +211,7 @@ height: 120px;
 }
 
 #f1 {
-  background-color: #FCE604;
+  background-color: lightgrey;
 }
 
 #f2 {
@@ -234,7 +234,7 @@ height: 120px;
   background-color: #fc04f0;
 }
 
-#foodoption {
+.foodoption {
   display: flex;
   justify-content: center;
   border-radius: 20px;
@@ -242,13 +242,28 @@ height: 120px;
   height: 150px;
   width: 150px;
   object-fit: cover;
+  
 }
 
-#orderfood {
+.orderfood {
   height: 30px;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
   font-size: 12px;
   margin-left: 50px;
+}
+
+.nested_foodoption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: lightgrey;
+}
+
+h1.food_description {
+  color:#135E3C;
+  font-size: 18px;
+  background-color: lightgrey;
 }
