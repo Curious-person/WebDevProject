@@ -2,10 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white;
   font-family: Helvetica;
   
 }
+
 
 html, body {
   height: 100%;
@@ -273,9 +273,16 @@ h2.food_price {
   text-align: left;
 }
 
-.footer {
+footer {
   background-color: #AE1526;
-  height: 100px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.footerGrid {
+
+  background-color: #AE1526;
+  height: 500px;
   padding: 50px;
   margin-top: -100px;
   clear: both;
@@ -289,43 +296,77 @@ h2.food_price {
   background-color: #AE1526;
 }
 
-.contact {
-  max-width: 500px;
-  margin: 0 auto;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  grid-row: 1fr 1fr;
-  justify-items: center; 
-  align-items: center;
+.flex-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #AE1526;
+  color: #ffffff;
+  border: #FCE604;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
+
+.flex-item h2 {
+  font-size: 18px;
+}
+
+h2 {
+  text-align: left;
+}
+
+#aboutus_footer {
+  text-align: justify;
+  font-size: 14px;
+}
+
+.listfooter {
+  list-style-type: none;
+}
+
+li {
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.logored {
+  cursor: pointer;
+  margin-right: auto;
+  height: 130px;
 
 }
 
-.card {
-  margin-top: 30px;
-  font-size: 20px;
-  width: 400px ;
-  height: 200px ;
-  text-align: center;
-  border-radius: 30px;
-  grid-auto-rows: 170px;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
+li:hover {
+  color: #FCE604;
 }
 
-#card1 {
-  background-color: aquamarine;
+.socmed {
+  height: 50px;
 }
 
-#card2 {
-  background-color: rgb(230, 163, 81);
+#hr_footer {
+  margin-top: 20px;
+  margin-left: 200px;
+  border-radius: 3px;
+  height: 2px;
+  width: 77%;
+  background-color: #711523;  
+  border: none;
+  box-shadow: none;
+  
 }
 
-#card3 {
-  background-color: rgb(116, 230, 81);
+#horizontal_ul li {
+  display: inline;
+
 }
 
-#card4 {
-  background-color: rgb(81, 136, 230);
+#horizontal_ul li:not(:last-child) {
+  display: inline-block;
+  margin-right: 20px; /* Adjust this value as needed */
 }
