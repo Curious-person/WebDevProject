@@ -282,7 +282,7 @@ footer {
 .footerGrid {
 
   background-color: #AE1526;
-  height: 500px;
+  height: 430px;
   padding: 50px;
   margin-top: -100px;
   clear: both;
@@ -302,13 +302,24 @@ footer {
   justify-content: space-between;
   background-color: #AE1526;
   color: #ffffff;
-  border: #FCE604;
+
+}
+
+.flex-container-alt {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-between;
+  background-color: #AE1526;
+  color: #ffffff;
+
 }
 
 .flex-item {
   flex: 1;
   margin: 10px;
   padding: 20px;
+
 }
 
 .flex-item h2 {
