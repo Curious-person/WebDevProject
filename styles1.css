@@ -283,6 +283,28 @@ padding: 50px;
   color: #AE1526;
 }
 
+.navoption {
+  background-color: white;
+  color: #A6A6A6;
+  font-size: 23px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.navoption:hover {
+  background-color: white;
+  color: #AE1526;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+#selected {
+  background-color: white;
+  color: #AE1526;
+  font-size: 23px;
+  text-decoration: none;
+}
+
 .rice_meals {
   display: grid;
   margin-top: 50px;
@@ -423,6 +445,20 @@ li {
   font-weight: lighter;
   font-size: 14px;
 }
+
+li #footersection {
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+  text-decoration: none;
+} 
+
+li #footersection:hover {
+  color: #FCE604;
+  font-weight: lighter;
+  font-size: 14px;
+  text-decoration: none;
+} 
 
 .logored {
   cursor: pointer;
