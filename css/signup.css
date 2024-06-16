@@ -110,7 +110,6 @@ body {
   }
   
 
-  
   .topnav {
   position: fixed;
   z-index: 1;
@@ -120,6 +119,7 @@ body {
   padding: 50px;
   } 
   
+/* Forms */
 
 .wrapper {
     width: 420px;
@@ -170,30 +170,30 @@ body {
     font-size: 20px;
 }
 
-.wrapper .remember-forgot {
+.wrapper .gender {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 
-.remember-forgot label input {
+.gender label input {
     accent-color: #AE1526;
     margin-right: 3px;
+    
 }
 
-.remember-forgot label {
+.gender h2 {
+    color: gray;
+    font-weight: 600;
+    font-size: 14.5px;
+}
+
+.gender label {
     color: #135E3C;
+    font-weight: 600;
 }
 
-.remember-forgot a {
-    color: #135E3C;
-    text-decoration: none
-}
-
-.remember-forgot a:hover {
-    text-decoration: underline;
-}
 
 .wrapper .btn {
     width: 100%;
@@ -232,3 +232,33 @@ body {
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+.locationoption input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    padding: 12px 45px 12px 20px;
+    margin-bottom: 20px;
+}
+
+.locationoption input::placeholder {
+    color: gray;
+    font-size: 14px;
+    padding-left: 1px;
+}
+
+.locationoption i {
+    color: gray;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
