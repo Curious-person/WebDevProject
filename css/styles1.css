@@ -362,9 +362,8 @@ padding: 50px;
 }
 
 
-.orderfood {
+.orderfood button {
   height: 30px;
-  text-align: center;
   display: flex;
   flex-direction: row-reverse;
   font-size: 12px;
@@ -375,7 +374,7 @@ padding: 50px;
   display: grid;
   grid-template-columns: 120px 120px;
   grid-template-rows: 50px 50px; 
-  border: #FCE604 solid;
+  position: relative;
 }
 
 h1.food_description {

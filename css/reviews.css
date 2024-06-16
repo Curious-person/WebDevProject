@@ -1,0 +1,517 @@
+
+/* Overall code setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    
+  }
+  
+  html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  #main_contents {
+    min-height: 100%;
+  
+  }
+  
+  #main {
+    overflow: auto;
+    padding-bottom: 100px;
+    height: 1700px;
+  }
+  
+  
+  
+  /* 
+  
+  li, a, button {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #135E3C;
+    text-decoration: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+  }
+  
+  Navigation bar 
+  .nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .nav_links li a {
+    transition: all 0.3s ease 0s;
+    
+  }
+  
+  .nav_links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #AE1526;
+  }
+  */
+  
+  /* Navigation bar */
+  
+  .menu_bar {
+    position: fixed;
+    background-color: #FCE604;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 1;
+  }
+  
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+    background-color: #FCE604;
+  }
+  
+  
+  .menu_bar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu_bar ul li {
+    padding: 10px 30px;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .menu_bar ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #135E3C;
+  }
+  
+  .menu_bar ul li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #AE1526;
+  }
+  
+  .menu_bar button {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .dropdown_menu {
+    visibility: hidden; 
+    opacity: 0; 
+    display: none;
+    border-radius: 5px;
+    transition: all 0.3s ease, visibility 0.3s ease;
+    
+  }
+  
+  .menu_bar ul li:hover .dropdown_menu {
+    visibility: visible; 
+    opacity: 1; 
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: white;
+  }
+  
+  .dropdown_menu ul {
+    display: block;
+    list-style: none;
+   
+  }
+  
+  .dropdown_menu ul li{
+    
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 100;
+  }
+  
+  .dropdown_menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #8d8d8d;
+  }
+  
+  button {
+    margin-left: 10px;
+    padding: 9px 25px;
+    background-color: #AE1526;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+  
+  }
+  
+  .cta {
+    background-color: #FCE604;
+    
+  }
+  
+  button:hover {
+    background-color: #135E3C;
+  }
+  
+  .topnav {
+  position: fixed;
+  z-index: 1;
+  background-color: #FCE604;
+  height: 120px;
+  width: 100%;
+  padding: 50px;
+  } 
+  
+  
+  /* Cover photo and Heading text*/
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 63vh;
+    color: #135E3C;
+    flex-wrap: wrap;
+  }
+  
+  #box1 h1 {
+    font-weight: bolder;
+  }
+  
+  #box1 h2.lighter {
+    font-weight: 100;
+  }
+  
+  .box {
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  #box1 {
+    text-align: left;
+    width: 500px;
+    height: auto;
+  }
+  
+  
+  #box1 h1 {
+    font-size: 50px;
+    
+  }
+  
+  #box1 h2 {
+    font-size: 23px;
+  
+  }
+  
+  #box2 {
+    width: auto;
+  }
+  
+  #headerphoto {
+    height: 400px;
+    background-color: #FCE604;
+    border-radius: 10px;
+  }
+  
+  .order_button1 {
+    padding: 9px 25px;
+    background-color: #AE1526;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  
+  }
+  
+  .order_button1:hover {
+    background-color: white;
+    color: #AE1526;
+    border: solid #AE1526;
+  
+  }
+  
+  #shoppingcart {
+    background-color: #A6A6A6;
+    color: white;
+    border: none;
+    padding: 9px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  #shoppingcart:hover {
+  
+    background-color: white;
+    color: #A6A6A6;
+    border: solid #A6A6A6;
+  }
+  
+  /*separator*/
+  .separator {
+    width: 77%;
+    border-top-width: 3px;
+    border-radius: 50px;
+    border-top: 3px solid #D9D9D9;
+    margin: 40px auto;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    flex-wrap: wrap;
+  }
+  
+  .navigation h1{
+    color: #A6A6A6;
+    font-size: 23px
+  }
+  
+  .nav_food {
+    background-color: white;
+    color: #A6A6A6;
+    font-size: 23px;
+  }
+  
+  .nav_food:hover {
+    background-color: white;
+    color: #AE1526;
+  }
+  
+  .navoption {
+    background-color: white;
+    color: #A6A6A6;
+    font-size: 23px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .navoption:hover {
+    background-color: white;
+    color: #AE1526;
+    font-size: 23px;
+    text-decoration: none;
+  }
+  
+  #selected {
+    background-color: white;
+    color: #AE1526;
+    font-size: 23px;
+    text-decoration: none;
+  }
+  
+  .rice_meals {
+    display: grid;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px;
+    align-items: center;
+  }
+  
+  .food_image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8em;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  
+  .food_image:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+    border: #D9D9D9 solid;
+  }
+  
+  
+  .foodoption {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 6px;
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    
+  }
+  
+  
+  .orderfood button {
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 12px;
+    margin-left: 50px;
+  }
+  
+  .nested_foodoption {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 50px 50px; 
+    position: relative;
+  }
+  
+  h1.food_description {
+    color:#135E3C;
+    font-size: 18px;
+    text-align: left;
+    
+  }
+  
+  h2.food_price {
+    color:#135E3C;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+  }
+  
+  footer {
+    background-color: #AE1526;
+    box-sizing: border-box;
+    height: auto;
+  }
+  
+  .footerGrid {
+  
+    background-color: #AE1526;
+    height: 430px;
+    padding: 50px;
+    margin-top: -100px;
+    clear: both;
+    position: relative;
+  }
+  
+  .footername {
+    text-align: center;
+    color: #FCE604;
+    font-size: 20px;
+    background-color: #AE1526;
+  }
+  
+  .flex-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #AE1526;
+    color: #ffffff;
+  
+  }
+  
+  .flex-container-alt {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    background-color: #AE1526;
+    color: #ffffff;
+  
+  }
+  
+  .flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+  
+  }
+  
+  .flex-item h2 {
+    font-size: 18px;
+  }
+  
+  h2 {
+    text-align: left;
+  }
+  
+  #aboutus_footer {
+    text-align: justify;
+    font-size: 14px;
+  }
+  
+  .listfooter {
+    list-style-type: none;
+  }
+  
+  li {
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  
+  li #footersection {
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+    text-decoration: none;
+  } 
+  
+  li #footersection:hover {
+    color: #FCE604;
+    font-weight: lighter;
+    font-size: 14px;
+    text-decoration: none;
+  } 
+  
+  .logored {
+    cursor: pointer;
+    margin-right: auto;
+    height: 130px;
+  
+  }
+  
+  li:hover {
+    color: #FCE604;
+  }
+  
+  .socmed {
+    height: 50px;
+  }
+  
+  #hr_footer {
+    margin-top: 20px;
+    margin-left: 200px;
+    border-radius: 3px;
+    height: 2px;
+    width: 77%;
+    background-color: #711523;  
+    border: none;
+    box-shadow: none;
+    
+  }
+  
+  #horizontal_ul li {
+    display: inline;
+  
+  }
+  
+  #horizontal_ul li:not(:last-child) {
+    display: inline-block;
+    margin-right: 20px; /* Adjust this value as needed */
+  }
+  
+  
