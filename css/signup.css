@@ -170,6 +170,8 @@ body {
     font-size: 20px;
 }
 
+
+
 .wrapper .gender {
     display: flex;
     justify-content: space-between;
@@ -262,3 +264,23 @@ body {
     
 }
 
+.wrapper .email-checkbox {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.email-checkbox label input {
+  accent-color: #AE1526;
+  margin-right: 3px;
+}
+
+.email-checkbox label {
+  color: #135E3C;
+}
+
+.wrapper hr {
+  text-decoration: none;
+  box-shadow: none;
+}

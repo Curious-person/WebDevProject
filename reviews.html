@@ -2,225 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon"  type="x-icon" href="/Pictures/benchmark.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <title> Reviews </title>
+    <link rel="shortcut icon"  type="x-icon" href="/Pictures/benchmark.png">
+    <title>Reviews</title>
     <link rel="stylesheet" href="/css/reviews.css">
-    
 </head>
 <body>
-<div id="main_contents">
-    <div id="main">
-
-    <div class="menu_bar">
-        <a href="#"> <img class="logo" src="/Pictures/henlinlogo.png" alt="logo"> </a>
-
-        <ul> 
-            <li> <a href="#">Menu <i class="fas fa-caret-down"></i></a>
-                <div class="dropdown_menu">
-                    <ul>
-                        <li> <a href="ricemeals.html">Rice Meals</a></li>
-                        <li> <a href="#">Noodles</a></li>
-                        <li> <a href="#">Dimsum</a></li>
-                        <li> <a href="#">Dessert</a></li>
-                        <li> <a href="#">Frozen Packs</a></li>
-                    </ul>
-                </div></li>
-            <li> <a href="#">Our Story  </i> </a></li>
-            <li> <a href="#">Reviews<i class="fas fa-caret-down"> </i> </a>
-                <div class="dropdown_menu">
-                    <ul>
-                        <li> <a href="#">User Reviews</a></li>
-                        <li> <a href="reviews.html">FAQ</a></li>
-                        <li> <a href="#">Gallery</a></li>
-                    
-                    </ul>
-                </div></li>
-            <li> <a href="#"> Contact Us <i class="fas fa-caret-down"> </i>
-                <div class="dropdown_menu">
-                    <ul>
-                        <li> <a href="#">Job Openings</a></li>
-                        <li> <a href="#">Send us a message</a></li>
-                        <li> <a href="#">Apply for a franchise</a></li>
-                        <li> <a href="#">Apply for a job</a></li>
-                        <li> <a href="#">Be our supplier/partner</a></li>
-                    </ul>
-                </div></a></li>
-            <li> <a href="#">Login</a></li>
-            <li> <a class="cta" href="signup.html"> <button>Sign up</button> </a></li>
-        </ul>
-
-    </div>
-
-    <div class="container">
-        <div class="box" id="box1"> 
-            <h1> Frequently Asked Questions</h1>
-            <button id="shoppingcart"  onclick="location.href='#'"> <i class="fa-solid fa-cart-shopping"></i> 
-            </button>
-            
-        </div>
-    </div>
-
-
-    <hr class="separator">
-
-<!--- The main options for food menu --->
-    
-<section id="section1"> 
-    <div class="navigation">
-        <div class="food_options" id="nav1"> 
+    <div class="wrapper">
+        <h1> Read what our customers say! </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sunt cumque. Adipisci corrupti quos minima odit et laborum pariatur beatae maiores odio saepe rerum necessitatibus, aliquam corporis temporibus fuga dolor?</p>
         
-        <!-- Rice Meal Selected -->
-            <button class="nav_food" id="nav1">   <a href="ricemeals.html" id="selected"> <i class="fa-solid fa-bowl-food"></i> Rice Meals </a> </button>
-        </div>
+        <!--Flex items-->
+        <div class="box-items">
+            <div class="box" id="box1">
+                <div class="name-and-rating">
 
-        <div class="food_options" id="nav2"> 
-            <button class="nav_food"> <a href="noodles.html" class="navoption"> <i class="fa fa-solid fa-bowl-rice"></i>  Noodles </a></button>
-        </div>
-        <div class="food_options" id="nav3"> 
-            <button class="nav_food">  <a href="dimsum.html" class="navoption"> <i class="fa-solid fa-bread-slice"></i> Dimsum </a> </button>
-        </div>
-        <div class="food_options" id="nav4"> 
-            <button class="nav_food"> <a href="desert.html" class="navoption"></a><i class="fa-solid fa-ice-cream"></i> Dessert </a> </button>
-        </div>
-        <div class="food_options" id="nav5"> 
-            <button class="nav_food"> <a href="frozenpacks.html" class="navoption"></a><i class="fa-solid fa-cubes-stacked"></i> Frozen Packs </a> </button>
-        </div>
-    
-
-        <div class="rice_meals">
+                    <div class="picture"> <img src="/Pictures/reviews/barackobama.jpg" class="user-picture"> </div> 
+                    <div class="name"> Barack Obama </div> 
+                    
+                    <div class="rating"> <i class="fa-solid fa-star"></i> 4/5 </div> 
+                </div>
+                <div class="review"> <p> I, as president of the United States of America, shall honor Hen Lin as the best restaurant in the world.</p> </div>
+                <div class="date"> <h2> June 26, 2024 </h2></div>
+            </div>
+            <div class="box" id="box2"> box2 </div>
             
-
-            <div class="food_image" id="f1"> 
-                    <img class="foodoption" src="/Pictures/RiceMeals/sweetsourpork.jpg" alt="rc1"> 
-
-                <div class="nested_foodoption">
-                    <h1 class="food_description"> Sweet & Sour Pork Rice </h1>
-                    <button  class="order_button1" class="orderfood"> Order </button>
-                    <h2 class="food_price"> ₱ 200.00 </h2>
-                </div> 
-                </div>
-                
-            <div class="food_image" id="f2">  
-                <img class="foodoption" src="/Pictures/RiceMeals/sweetsourfish.jpg" alt="rc1"> 
-
-                <div class="nested_foodoption">
-                    <h1 class="food_description"> Sweet & Sour Fish Rice </h1>
-                    <button class="order_button1" class="orderfood"> Order </button>
-                    <h2 class="food_price"> ₱ 200.00 </h2>
-                </div> 
-                </div>
-
-            <div class="food_image" id="f3"> 
-                <img class="foodoption" src="/Pictures/RiceMeals/chopsuey.jpg" alt="rc1"> 
-
-                <div class="nested_foodoption">
-                    <h1 class="food_description"> Chopsuey Rice Bowl </h1>
-                    <button class="order_button1" class="orderfood"> Order </button>
-                    <h2 class="food_price"> ₱ 169.00 </h2>
-                </div> 
-                </div>
-                
-            <div class="food_image" id="f4"> 
-                <img class="foodoption" src="/Pictures/RiceMeals/braisedbeef.jpg" alt="rc1"> 
-
-                <div class="nested_foodoption">
-                    <h1 class="food_description"> Braised Beef Rice Bowl </h1>
-                    <button class="order_button1" class="orderfood"> Order </button>
-                    <h2 class="food_price"> ₱ 200.00 </h2>
-                </div> 
-                </div>
-
-            <div class="food_image" id="f5"> 
-                <img class="foodoption" src="/Pictures/RiceMeals/ribs.jpg" alt="rc1"> 
-
-                <div class="nested_foodoption">
-                    <h1 class="food_description"> Spareribs Rice bowl </h1>
-                    <button class="order_button1" class="orderfood"> Order </button>
-                    <h2 class="food_price"> ₱ 182.00 </h2>
-                </div> 
-                </div>
-                
-            <div class="food_image" id="f6">                 
-                <img class="foodoption" src="/Pictures/RiceMeals/porkaside.jpg" alt="rc1"> 
-
-                <div class="nested_foodoption">
-                    <h1 class="food_description"> Pork Aside Rice </h1>
-                    <button class="order_button1" class="orderfood"> Order </button>
-                    <h2 class="food_price"> ₱ 200.00 </h2>
-                </div> 
-                </div>
-            </div>
+            <div class="box" id="box3"> box3 </div>
         </div>
 
+        <button> View more <i class="fas fa-caret-down"></i> </button>
     </div>
-    </div>
-    </div>
-
-
-
-    
-<footer>
-    <div class="footerGrid">
-        
-            <div class="flex-container"> 
-                <div class="flex-item">
-                    <h2> ABOUT US </h2>
-                    <p id="aboutus_footer">  After more than 35 years in the industry, Hen Lin has developed into the reputable name that it is today.  Hen Lin has continued to be inventive, though, as evidenced by its continuous investment in cutting-edge technologies to significantly raise the caliber and consistency of its output.  Hen Lin has adopted the HAACP (Hazard Analysis and Critical Control Point) and GMP (Good Manufacturing Practices) protocols to guarantee the highest caliber dim sum products available to our customers.   
-                    </p>
-                    
-                </div>
-
-                <div class="flex-item">
-                    <h2>CATEGORIES</h2>
-                    <ul class="listfooter">
-                      <li> <a href="ricemeals.html" id="footersection" > Rice Meals </a></li>
-                      <li>Noodles</li>
-                      <li>Dimsum</li>
-                      <li>Desert</li>
-                      <li>Frozen Packs</li>
-                    </ul class="listfooter">
-                </div>
-                
-                <div class="flex-item"> 
-                    <h2>QUICK LINKS</h2>
-                    <ul class="listfooter">
-                      <li> <a href="#section1" id="footersection">Menu </a></li>
-                      <li>About Us</li>
-                      <li><a href="reviews.html" id="footersection">FAQ </a></li>
-                      <li>Login</li>
-                    </ul class="listfooter">
-                </div>
-            </div>
-           
-            <hr id="hr_footer">
-
-            <div class="flex-container-alt">
-
-                <div class="flex-item">
-                    <a href="#"><img class="logored" src="/Pictures/henlinered.png" alt="logo">  </a>
-                </div>
-
-                <div class="flex-item">
-                    
-                </div>
-                
-                
-                <div class="flex-item">  
-                    <ul id="horizontal_ul">
-                        <li> <a href="https://www.instagram.com/henlinofficial/" target=”_blank”> <img class="socmed" src="/Pictures/ig.png" alt="logo"> </a> </li>
-                        <li> <a href="https://www.facebook.com/saraphenlin" target=”_blank”> <img class="socmed" src="/Pictures/fb.png" alt="logo"> </a> </li>
-                        <li> <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNxNtKkBFKsbSBwxbxZlvZvDWrqFsVGNrBmlFdBzhDXMjmgjhKVLSpGsFzDcdcHcKFVljB" target=”_blank”> <img class="socmed" src="/Pictures/mail.png" alt="logo"> </a> </li>
-                       
-                      </ul>
-                    
-
-                </div>
-  
-      </div>
-
-</footer>
- 
 </body>
 </html>
