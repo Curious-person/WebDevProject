@@ -34,7 +34,7 @@ body {
 }
 
 .wrapper p {
- 
+    margin-top: 15px;
     text-align: justify;
 
 }
@@ -70,6 +70,8 @@ body {
     font-weight: 600;
     
 }
+
+
 
 .name-and-rating .rating {
     font-size: 15px;
