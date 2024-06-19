@@ -114,13 +114,24 @@ body {
     min-height: 110px;
     resize: none;
 }
-
-.right-side .upload #caption {
-    font-size: 15px;
-    color: grey;
-    margin-top: 10px;
-
+.right-side .upload h1 {
+    font-size: 20px;
+    color: #135E3C;
 }
+
+.right-side .upload {
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+        gap: 10px;
+        padding: 15px 0 15px 0 ;
+}
+
+.right-side .upload input[type="file"] {
+    color: gray;
+    
+}
+
 
 
 
