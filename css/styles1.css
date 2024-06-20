@@ -325,6 +325,10 @@ padding: 50px;
   
 }
 
+.food_image #frozenpacks {
+  border: 	#25afff solid 3px;
+}
+
 
 .orderfood button {
   height: 30px;
