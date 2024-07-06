@@ -484,3 +484,49 @@ li:hover {
   margin-right: 20px;
 }
 
+@media (max-width: 768px) {
+  /* Navigation bar */
+  
+    .menu_bar {
+      height: 100px;
+      }
+  
+  
+    .menu_bar ul li {
+      padding: 0px 5px;
+    }
+  
+    .menu_bar ul li a {
+      font-size: 15px;
+    }
+  
+    .menu_bar ul li i {
+      display: none;
+    }
+  
+    .menu_bar ul li button {
+      display: none;
+    }
+  
+    .menu_bar img {
+      height: 60px;
+    }
+  
+    .container {
+      height: 50vh;
+    }
+  
+    .container img {
+      display: none;
+    }
+  
+    .navigation .food_options button {
+      padding: 5px 0px;
+      
+    }
+  
+    .navigation .food_options a {
+      font-size: 18px;
+    }
+  
+  }
