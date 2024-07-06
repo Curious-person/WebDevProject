@@ -13,6 +13,7 @@ html, body {
 
 #main_contents {
   min-height: 100%;
+  
 
 }
 
@@ -107,7 +108,7 @@ padding: 50px;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
-  height: 63vh;
+  height: 80vh;
   color: #135E3C;
   flex-wrap: wrap;
 }
@@ -326,6 +327,57 @@ h2.food_price {
   background-color: rgb(116, 230, 81);
 }
 
+<<<<<<< Updated upstream:styles.css
 #card4 {
   background-color: rgb(81, 136, 230);
 }
+=======
+
+@media (max-width: 768px) {
+/* Navigation bar */
+
+  .menu_bar {
+    height: 100px;
+    }
+
+
+  .menu_bar ul li {
+    padding: 0px 5px;
+  }
+
+  .menu_bar ul li a {
+    font-size: 15px;
+  }
+
+  .menu_bar ul li i {
+    display: none;
+  }
+
+  .menu_bar ul li button {
+    display: none;
+  }
+
+  .menu_bar img {
+    height: 60px;
+  }
+
+  .container {
+    height: 50vh;
+  }
+
+  .container img {
+    display: none;
+  }
+
+  .navigation .food_options button {
+    padding: 5px 0px;
+    
+  }
+
+  .navigation .food_options a {
+    font-size: 18px;
+  }
+
+}
+
+>>>>>>> Stashed changes:css/styles1.css
