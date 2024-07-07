@@ -488,7 +488,7 @@ li:hover {
   /* Navigation bar */
   
     .menu_bar {
-      height: 100px;
+      height: 120px;
       }
   
   
@@ -520,6 +520,12 @@ li:hover {
       display: none;
     }
   
+.navigation {
+  gap: 0px;
+  margin-right: 25px;
+
+}
+
     .navigation .food_options button {
       padding: 5px 0px;
       
@@ -529,4 +535,37 @@ li:hover {
       font-size: 18px;
     }
   
-  }
+  .rice_meals {
+  margin-top: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+
+}
+
+.footerGrid {
+  margin-top: 20px;
+  height: 500px;
+  position: relative;
+}
+
+.flex-container {
+  display: none;
+}
+
+#hr_footer {
+  display: none;
+}
+
+.flex-container-alt .flex-item img {
+  height: 90px;
+
+}
+
+
+
+.flex-item #horizontal_ul li img{
+  height: 30px;
+  
+}
+
+}
